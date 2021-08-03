@@ -7,7 +7,7 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 
 intents = discord.Intents.default()
 intents.members = True
-client = commands.Bot(command_prefix="!", intents=intents)
+client = commands.Bot(command_prefix="!", intents=intents) #Intents are important for this, do not touch anything here.
 
 @client.event
 async def on_ready(): #Every time that the bots turns on, will show this Ascii Art, if you want to use a custom Ascii art just change it, but let in inside of the triple quotes.
@@ -109,7 +109,7 @@ async def panda(ctx):
 @client.command()
 async def flema(ctx):
     user = ctx.message.author
-    await user.send("Here's my invite:\nhttps://discord.com/oauth2/authorize?client_id=870548494082002944&scope=bot&permissions=8\nDo you want to take a look to the bad practices of the creator of this bot?, here's the official Github Repo:\n")
+    await user.send("Here's my invite:\nhttps://discord.com/oauth2/authorize?client_id=870548494082002944&scope=bot&permissions=8\nDo you want to take a look to the bad practices of the creator of this bot?, here's the official Github Repo:https://github.com/PuppetCrowley/Arpaviejas\n")
 
 @client.command()
 async def elektroduendes(ctx):
