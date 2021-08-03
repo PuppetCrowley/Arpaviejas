@@ -1,7 +1,6 @@
 import time
 import asyncio
 import discord
-import requests
 from discord.ext import commands
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
