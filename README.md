@@ -88,6 +88,12 @@ To get a local copy up and running follow these simple steps.
    pip install -r requirements.txt
    ```
 
+4. Create a .env file and put your BOT TOEKN in it
+
+   ```sh
+   echo "<YOUR_BOT_TOKEN>" > .env
+   ```
+
 <!-- CONTRIBUTING -->
 
 ## Contributing
