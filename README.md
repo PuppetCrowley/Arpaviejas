@@ -16,8 +16,6 @@
   <p align="center">
     A discord BOT that make raid easier !
     <br />
-    <a href="https://github.com/PuppetCrowley/Arpaviejas"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     ·
     <a href="https://github.com/PuppetCrowley/Arpaviejas/issues">Arpaviejasrt Bug</a>
@@ -52,12 +50,6 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`PuppetCrowley`, `Arpaviejas`, `twitter_handle`, `email`, `project_title`, `project_description`
 
 ### Built With
 
