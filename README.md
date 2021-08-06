@@ -20,7 +20,7 @@
     <br />
     <br />
     ·
-    <a href="https://github.com/PuppetCrowley/Arpaviejas/issues">Report Bug</a>
+    <a href="https://github.com/PuppetCrowley/Arpaviejas/issues">Arpaviejasrt Bug</a>
     ·
     <a href="https://github.com/PuppetCrowley/Arpaviejas/issues">Request Feature</a>
   </p>
@@ -77,7 +77,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Installation
 
-1. Clone the repo
+1. Clone the Arpaviejas
 
    ```sh
    git clone https://github.com/PuppetCrowley/Arpaviejas.git
@@ -86,8 +86,8 @@ To get a local copy up and running follow these simple steps.
 2. (Optional) Create a python virtualenv
 
    ```sh
-   python3 -m venv {the name of your virtual env}
-   source {the name of your virtual env}/bin/activate
+   python3 -m venv env
+   source env/bin/activate
    ```
 
 3. Install python modules
@@ -123,13 +123,13 @@ Project Link: [https://github.com/PuppetCrowley/Arpaviejas](https://github.com/P
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/PuppetCrowley/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/PuppetCrowley/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/PuppetCrowley/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/PuppetCrowley/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/PuppetCrowley/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/PuppetCrowley/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/PuppetCrowley/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/PuppetCrowley/repo/issues
-[license-shield]: https://img.shields.io/github/license/PuppetCrowley/repo.svg?style=for-the-badge
-[license-url]: https://github.com/PuppetCrowley/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/PuppetCrowley/Arpaviejas.svg?style=for-the-badge
+[contributors-url]: https://github.com/PuppetCrowley/Arpaviejas/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/PuppetCrowley/Arpaviejas.svg?style=for-the-badge
+[forks-url]: https://github.com/PuppetCrowley/Arpaviejas/network/members
+[stars-shield]: https://img.shields.io/github/stars/PuppetCrowley/Arpaviejas.svg?style=for-the-badge
+[stars-url]: https://github.com/PuppetCrowley/Arpaviejas/stargazers
+[issues-shield]: https://img.shields.io/github/issues/PuppetCrowley/Arpaviejas.svg?style=for-the-badge
+[issues-url]: https://github.com/PuppetCrowley/Arpaviejas/issues
+[license-shield]: https://img.shields.io/github/license/PuppetCrowley/Arpaviejas.svg?style=for-the-badge
+[license-url]: https://github.com/PuppetCrowley/Arpaviejas/blob/master/LICENSE.txt
