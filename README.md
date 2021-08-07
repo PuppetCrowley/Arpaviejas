@@ -91,7 +91,7 @@ To get a local copy up and running follow these simple steps.
 4. Create a .env file and put your BOT TOKEN in it
 
    ```sh
-   echo "<YOUR_BOT_TOKEN>" > .env
+   echo "BOT_TOKEN=<YOUR_BOT_TOKEN>" > .env
    ```
 
 <!-- CONTRIBUTING -->
